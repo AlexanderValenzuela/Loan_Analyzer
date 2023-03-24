@@ -1,4 +1,3 @@
-# coding: utf-8
 import csv
 from pathlib import Path
 
@@ -17,12 +16,12 @@ loan_costs = [500, 600, 200, 1000, 450]
 # Use the `len` function to calculate the total number of loans in the 'loan_costs' list.
 total_number_of_loans = len(loan_costs)
 # Print the number of loans from the list.
-print(total_number_of_loans)
+print(f"The total number of loans is {total_number_of_loans}.")
 
 # Use the `sum` function to calculate the total of all loans in the 'loan_costs' list.
 sum_of_loans = sum(loan_costs)
 # Print the total value of the loans.
-print(sum_of_loans)
+print(f"The total of all loans is ${sum_of_loans:,.2f}.")
 
 # Calculate the average loan price.
 average_loan_price = sum_of_loans / total_number_of_loans
@@ -66,8 +65,8 @@ future_value = loan.get("future_value")
 remaining_months = loan.get("remaining_months")
 
 # Print each variable.
-print("Future value:", future_value)
-print("Remaining months:",remaining_months)
+print("Future value or face value: $", format(future_value, ",.2f"))
+print("Remaining months or maturity:",remaining_months)
 
 
 
@@ -82,8 +81,8 @@ present_value = future_value / (1 + discount_rate/12) ** remaining_months
 # If the present value of the loan is greater than or equal to the cost, then print a message that says the loan is worth at least the cost to buy it.
 # Else, the present value of the loan is less than the loan cost, then print a message that says that the loan is too expensive and not worth the price.
 if present_value >= loan["loan_price"]:
-    print("The loan is worth it!")
-else: print("The loan is too expensive!")
+    print("The loan is worth at least the cost to buy it.")
+else: print("The loan is too expensive and not worth the price.")
 
 
 
@@ -121,7 +120,7 @@ annual_discount_rate = .20
 # Use arguments in the function call to calculate the present value of the new loan.
 present_value_new_loan = new_loan["future_value"] / (1 + annual_discount_rate) ** new_loan["remaining_months"] 
 # Print the present value of the loan.
-print(f"The present value of the loan is: ${present_value: .2f}.")
+print(f"The present value of the loan is ${present_value:.2f}.")
 
 
 """Part 4: Conditionally filter lists of loans.
