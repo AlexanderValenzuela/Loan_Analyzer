@@ -15,7 +15,7 @@ Install an Integrated Developer Environment such as Visual Studio Code or PyChar
 Below are automated tasks for specific calculations with valuing microlending loans.  
 
 * Part 1 - Automate the Calculations<br>
-Purpose: Automate the calculations for the loan portfolio summaries to obtain average loan price.
+Purpose: Automate the calculations for the loan portfolio summaries to obtain average loan price.<br>
 How to: On line 14, provide the various loan prices.  The default is set to five loan prices.<br>
 
 ![Screenshot 2023-03-18 at 2 04 04 PM](https://user-images.githubusercontent.com/111409358/227440931-b74ef9aa-de89-40e2-80a8-5258eebbfdb2.png)
