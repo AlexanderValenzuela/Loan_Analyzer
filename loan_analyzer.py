@@ -118,7 +118,8 @@ def calculate_present_value(future_value,remaining_months, annual_discount_rate)
 # Use an `annual_discount_rate` of 0.2 for this new loan calculation.
 annual_discount_rate = .20
 # Use arguments in the function call to calculate the present value of the new loan.
-present_value_new_loan = new_loan["future_value"] / (1 + annual_discount_rate) ** new_loan["remaining_months"] 
+present_value = calculate_present_value(new_loan["future_value"], new_loan["remaining_months"], 0.20)
+
 # Print the present value of the loan.
 print(f"The present value of the loan is ${present_value:.2f}.")
 
