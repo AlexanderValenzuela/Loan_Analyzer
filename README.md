@@ -49,7 +49,7 @@ In terminal or the command line, change to a dev environment by typing, conda ac
 To run the program, type, python loan_analyzer.py
 
 Sample Output
-![Screenshot 2023-03-18 at 6 27 34 PM](https://user-images.githubusercontent.com/111409358/227441535-736daf32-773c-41c5-9643-a7dc2a399a0a.png)
+![Screenshot 2023-03-29 at 9 25 11 PM](https://user-images.githubusercontent.com/111409358/228729625-a41d98ce-95af-4cd8-8fbc-1ffd4cc7de7d.png)
 
 ---
 ## Contributors
